@@ -1,10 +1,17 @@
-SQL porfolio project.
+                                ****************************
+                                *** SQL porfolio project ***
+                                ****************************
+///Task-1:///
+
 download credit card transactions dataset from below link :
 https://www.kaggle.com/datasets/thedevastator/analyzing-credit-card-spending-habits-in-india
+
+///Task-2///
 
 import the dataset in MySQL Workbench with table name : credit_card_transcations
 while importing make sure to change the data types of columns. by defualt it shows everything as varchar.
 
+///Task-3///
 
 solve below questions
 1- write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends 
