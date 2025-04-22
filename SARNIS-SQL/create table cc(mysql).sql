@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS credit_card_transcations;
+DROP TABLE IF EXISTS credit_card_transcations ;
 
 CREATE TABLE credit_card_transcations (
     transaction_id	INT,
