@@ -1,4 +1,3 @@
--- Active: 1739904563235@@127.0.0.1@3306@local
 DROP TABLE IF EXISTS credit_card_transcations;
 
 CREATE TABLE credit_card_transcations (
@@ -26065,8 +26064,9 @@ INSERT INTO credit_card_transcations (transaction_id, city, transaction_date, ca
 	('26051', 'Kanpur', '14-Sep-14', 'Silver', 'Travel', 'M', '88174'),
 	('26052', 'Hyderabad', '19-Oct-13', 'Signature', 'Bills', 'M', '184410');
     
-    
+-- Here we will create a new column to store our transactions date but with data type "DATE"     
 ALTER TABLE credit_card_transcations
-ADD COLUMN transactions_date DATE;
+ADD COLUMN transactions_date DATE; 
+
 UPDATE credit_card_transcations
 SET transactions_date = STR_TO_DATE(transaction_date, '%d-%b-%y');
