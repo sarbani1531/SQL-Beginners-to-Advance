@@ -54,6 +54,8 @@ cteb as ( select city,higher from cte1 where higher is not null )
 select ctea.city, ctea.lower, cteb.higher
 from ctea inner join cteb on ctea.city = cteb.city ;
 
+-- other solution
+
 with cte1 as (
 	with cte as (
 		select DISTINCT city, exp_type, 
@@ -67,9 +69,9 @@ with cte1 as (
 	ctehigh as (
 		select city,exp_type highest_expense_type from cte1 where high = (select min(high) from cte1))
 	select ctehigh.*, ctelow.lowest_expense_type 
-    from ctelow
+    	from ctelow
 	inner join ctehigh 
-    on ctelow.city = ctehigh.city ;
+    	on ctelow.city = ctehigh.city ;
 
 
 -- 6- write a query to find percentage contribution of spends by females for each expense type
@@ -92,7 +94,7 @@ with cte1 as (
 select card_type,exp_type from cte1 where yr = 2014 and mnt = 1 and dif>0
 order by dif desc limit 1;
 
--- 9- during weekends which city has highest total spend to total no of transcations ratio 
+-- 8- during weekends which city has highest total spend to total no of transcations ratio 
 
 with cte as (select distinct city, dayofweek(transactions_date) days, amount,
 count(city) over(PARTITION BY city) cnt1
@@ -103,7 +105,7 @@ round(sum(amount) over(PARTITION BY city,days) / cnt1 , 2 ) ratio
  order by ratio desc limit 1;
 
 
--- 10- which city took least number of days to reach its 500th transaction after the first transaction in that city
+-- 9- which city took least number of days to reach its 500th transaction after the first transaction in that city
 
 with cte as (select city,transactions_date,
 ROW_NUMBER() over(PARTITION BY city ORDER BY city,transactions_date) rn
