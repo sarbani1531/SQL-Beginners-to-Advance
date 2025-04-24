@@ -1,0 +1,37 @@
+**End-to-End EDA Questions: Online Retail II Dataset**
+
+---
+
+### 🔹 Low-Level (Basic Exploration)
+
+1. Print the shape of the dataset and list all column names.
+2. Identify columns with missing values and calculate the percentage of missing data per column.
+3. Which are the top 5 countries with the highest number of orders?
+4. How many unique customers are present in the dataset?
+5. List the top 10 best-selling products based on quantity.
+
+---
+
+### 🔸 Medium-Level (Trend & Distribution Analysis)
+
+6. Plot the monthly sales trend using either quantity or revenue.
+7. Identify top customers by total purchase value (Revenue).
+8. Which country has the highest cancellation rate (based on negative quantities)?
+9. What is the average quantity sold per product per invoice?
+10. What is the average basket size (number of products) per invoice?
+
+---
+
+### 🔺 Advanced-Level (Customer Segmentation + Deep Dive)
+
+11. Perform RFM (Recency, Frequency, Monetary) analysis and segment the customers.
+12. Which are the most valuable customer clusters based on RFM scores?
+13. Are there any specific countries whose customers belong mostly to high-value segments?
+14. Analyze sales seasonality based on month and day of the week.
+15. Are there specific product categories with higher rates of repeat purchases?
+
+---
+
+**Note:** Dataset used - Online Retail II (UCI Repository)
+Link: https://archive.ics.uci.edu/dataset/502/online%2Bretail%2Bii
+
