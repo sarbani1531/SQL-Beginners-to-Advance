@@ -1,3 +1,5 @@
+-- Active: 1746370038192@@127.0.0.1@3306@local
+-- Active: 1746370038192@@127.0.0.1@3306
 DROP TABLE IF EXISTS superstore_orders;
 
 CREATE TABLE superstore_orders (
@@ -9,7 +11,7 @@ CREATE TABLE superstore_orders (
     Customer_ID	VARCHAR(512),
     Customer_Name	VARCHAR(512),
     Segment	VARCHAR(512),
-    Country/Region	VARCHAR(512),
+    `Country/Region`	VARCHAR(512),
     City	VARCHAR(512),
     State	VARCHAR(512),
     Postal_Code	INT,
@@ -24,7 +26,9 @@ CREATE TABLE superstore_orders (
     Profit	DOUBLE
 );
 
-INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mode, Customer_ID, Customer_Name, Segment, Country/Region, City, State, Postal_Code, Region, Product_ID, Category, Sub_Category, Product_Name, Sales, Quantity, Discount, Profit) VALUES
+
+INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mode, Customer_ID, Customer_Name, Segment, `Country/Region`, City, State, Postal_Code, Region, Product_ID, Category, Sub_Category, Product_Name, Sales, Quantity, Discount, Profit) 
+VALUES
 	('1', 'CA-2020-152156', '11/8/20', '11/11/20', 'Second Class', 'CG-12520', 'Claire Gute', 'Consumer', 'United States', 'Henderson', 'Kentucky', '42420', 'South', 'FUR-BO-10001798', 'Furniture', 'Bookcases', 'Bush Somerset Collection Bookcase', '261.96', '2', '0', '41.9136'),
 	('2', 'CA-2020-152156', '11/8/20', '11/11/20', 'Second Class', 'CG-12520', 'Claire Gute', 'Consumer', 'United States', 'Henderson', 'Kentucky', '42420', 'South', 'FUR-CH-10000454', 'Furniture', 'Chairs', 'Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back', '731.94', '3', '0', '219.582'),
 	('3', 'CA-2020-138688', '6/12/20', '6/16/20', 'Second Class', 'DV-13045', 'Darrin Van Huff', 'Corporate', 'United States', 'Los Angeles', 'California', '90036', 'West', 'OFF-LA-10000240', 'Office Supplies', 'Labels', 'Self-Adhesive Address Labels for Typewriters by Universal', '14.62', '2', '0', '6.8714'),
@@ -2259,7 +2263,7 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('2232', 'CA-2021-157091', '6/26/21', '7/1/21', 'Standard Class', 'DB-13405', 'Denny Blanton', 'Consumer', 'United States', 'La Porte', 'Indiana', '46350', 'Central', 'FUR-FU-10000293', 'Furniture', 'Furnishings', 'Eldon Antistatic Chair Mats for Low to Medium Pile Carpets', '526.45', '5', '0', '31.587'),
 	('2233', 'CA-2021-132122', '7/9/21', '7/14/21', 'Standard Class', 'JH-15820', 'John Huston', 'Consumer', 'United States', 'Chicago', 'Illinois', '60610', 'Central', 'OFF-ST-10003692', 'Office Supplies', 'Storage', 'Recycled Steel Personal File for Hanging File Folders', '228.92', '5', '0.2', '14.3075'),
 	('2234', 'CA-2019-123232', '12/14/19', '12/16/19', 'Second Class', 'DJ-13630', 'Doug Jacobs', 'Consumer', 'United States', 'Portland', 'Oregon', '97206', 'West', 'TEC-PH-10001051', 'Technology', 'Phones', 'HTC One', '319.968', '4', '0.2', '35.9964'),
-	('2235', 'CA-2021-104066', '12/5/21', '12/10/21', 'Standard Class', 'QJ-19255', 'Quincy Jones', 'Corporate', 'United States', 'Burlington', 'Vermont', '', 'East', 'TEC-AC-10001013', 'Technology', 'Accessories', 'Logitech ClearChat Comfort/USB Headset H390', '205.03', '7', '0', '67.6599'),
+	('2235', 'CA-2021-104066', '12/5/21', '12/10/21', 'Standard Class', 'QJ-19255', 'Quincy Jones', 'Corporate', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'TEC-AC-10001013', 'Technology', 'Accessories', 'Logitech ClearChat Comfort/USB Headset H390', '205.03', '7', '0', '67.6599'),
 	('2236', 'CA-2019-145849', '9/15/19', '9/17/19', 'Second Class', 'CT-11995', 'Carol Triggs', 'Consumer', 'United States', 'Indianapolis', 'Indiana', '46203', 'Central', 'OFF-ST-10000025', 'Office Supplies', 'Storage', 'Fellowes Stor/Drawer Steel Plus Storage Drawers', '190.86', '2', '0', '11.4516'),
 	('2237', 'CA-2019-145849', '9/15/19', '9/17/19', 'Second Class', 'CT-11995', 'Carol Triggs', 'Consumer', 'United States', 'Indianapolis', 'Indiana', '46203', 'Central', 'OFF-AR-10000817', 'Office Supplies', 'Art', 'Manco Dry-Lighter Erasable Highlighter', '24.32', '8', '0', '8.2688'),
 	('2238', 'CA-2020-122322', '7/15/20', '7/21/20', 'Standard Class', 'RH-19510', 'Rick Huthwaite', 'Home Office', 'United States', 'Provo', 'Utah', '84604', 'West', 'OFF-SU-10000952', 'Office Supplies', 'Supplies', 'Fiskars Home & Office Scissors', '44.4', '5', '0', '12.432'),
@@ -5299,7 +5303,7 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('5272', 'CA-2021-125913', '1/16/21', '1/16/21', 'Same Day', 'JO-15145', 'Jack O\'Briant', 'Corporate', 'United States', 'Los Angeles', 'California', '90008', 'West', 'FUR-FU-10001487', 'Furniture', 'Furnishings', 'Eldon Expressions Wood and Plastic Desk Accessories, Cherry Wood', '27.92', '4', '0', '8.0968'),
 	('5273', 'CA-2021-125913', '1/16/21', '1/16/21', 'Same Day', 'JO-15145', 'Jack O\'Briant', 'Corporate', 'United States', 'Los Angeles', 'California', '90008', 'West', 'FUR-TA-10001520', 'Furniture', 'Tables', 'Lesro Sheffield Collection Coffee Table, End Table, Center Table, Corner Table', '399.672', '7', '0.2', '-14.9877'),
 	('5274', 'US-2020-158309', '11/26/20', '11/29/20', 'First Class', 'PA-19060', 'Pete Armstrong', 'Home Office', 'United States', 'Miami', 'Florida', '33142', 'South', 'OFF-BI-10000145', 'Office Supplies', 'Binders', 'Zipper Ring Binder Pockets', '3.744', '4', '0.7', '-2.6208'),
-	('5275', 'CA-2019-162887', '11/7/19', '11/9/19', 'Second Class', 'SV-20785', 'Stewart Visinsky', 'Consumer', 'United States', 'Burlington', 'Vermont', '', 'East', 'FUR-CH-10000595', 'Furniture', 'Chairs', 'Safco Contoured Stacking Chairs', '715.2', '3', '0', '178.8'),
+	('5275', 'CA-2019-162887', '11/7/19', '11/9/19', 'Second Class', 'SV-20785', 'Stewart Visinsky', 'Consumer', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'FUR-CH-10000595', 'Furniture', 'Chairs', 'Safco Contoured Stacking Chairs', '715.2', '3', '0', '178.8'),
 	('5276', 'CA-2021-147333', '12/14/21', '12/20/21', 'Standard Class', 'KL-16555', 'Kelly Lampkin', 'Corporate', 'United States', 'Fayetteville', 'Arkansas', '72701', 'South', 'TEC-AC-10004469', 'Technology', 'Accessories', 'Microsoft Sculpt Comfort Mouse', '159.8', '4', '0', '70.312'),
 	('5277', 'CA-2021-147333', '12/14/21', '12/20/21', 'Standard Class', 'KL-16555', 'Kelly Lampkin', 'Corporate', 'United States', 'Fayetteville', 'Arkansas', '72701', 'South', 'TEC-AC-10003038', 'Technology', 'Accessories', 'Kingston Digital DataTraveler 16GB USB 2.0', '44.75', '5', '0', '8.5025'),
 	('5278', 'CA-2018-113859', '9/13/18', '9/17/18', 'Standard Class', 'BC-11125', 'Becky Castell', 'Home Office', 'United States', 'Odessa', 'Texas', '79762', 'Central', 'FUR-CH-10004698', 'Furniture', 'Chairs', 'Padded Folding Chairs, Black, 4/Carton', '340.116', '6', '0.3', '-9.7176'),
@@ -8823,7 +8827,7 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('8796', 'CA-2018-162992', '12/19/18', '12/21/18', 'First Class', 'BP-11095', 'Bart Pistole', 'Corporate', 'United States', 'Los Angeles', 'California', '90008', 'West', 'TEC-PH-10002085', 'Technology', 'Phones', 'Clarity 53712', '211.168', '4', '0.2', '15.8376'),
 	('8797', 'CA-2020-106397', '7/7/20', '7/13/20', 'Standard Class', 'MJ-17740', 'Max Jones', 'Consumer', 'United States', 'Orem', 'Utah', '84057', 'West', 'OFF-PA-10003441', 'Office Supplies', 'Paper', 'Xerox 226', '12.96', '2', '0', '6.2208'),
 	('8798', 'CA-2020-106397', '7/7/20', '7/13/20', 'Standard Class', 'MJ-17740', 'Max Jones', 'Consumer', 'United States', 'Orem', 'Utah', '84057', 'West', 'OFF-AR-10004602', 'Office Supplies', 'Art', 'Boston KS Multi-Size Manual Pencil Sharpener', '45.98', '2', '0', '12.8744'),
-	('8799', 'US-2020-150140', '4/6/20', '4/10/20', 'Standard Class', 'VM-21685', 'Valerie Mitchum', 'Home Office', 'United States', 'Burlington', 'Vermont', '', 'East', 'TEC-PH-10002555', 'Technology', 'Phones', 'Nortel Meridian M5316 Digital phone', '1294.75', '5', '0', '336.635'),
+	('8799', 'US-2020-150140', '4/6/20', '4/10/20', 'Standard Class', 'VM-21685', 'Valerie Mitchum', 'Home Office', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'TEC-PH-10002555', 'Technology', 'Phones', 'Nortel Meridian M5316 Digital phone', '1294.75', '5', '0', '336.635'),
 	('8800', 'CA-2018-116666', '5/8/18', '5/10/18', 'First Class', 'KT-16480', 'Kean Thornton', 'Consumer', 'United States', 'Philadelphia', 'Pennsylvania', '19134', 'East', 'TEC-CO-10001449', 'Technology', 'Copiers', 'Hewlett Packard LaserJet 3310 Copier', '1799.97', '5', '0.4', '239.996'),
 	('8801', 'CA-2021-148992', '11/23/21', '11/27/21', 'Standard Class', 'CS-12250', 'Chris Selesnick', 'Corporate', 'United States', 'Chicago', 'Illinois', '60623', 'Central', 'OFF-PA-10004285', 'Office Supplies', 'Paper', 'Xerox 1959', '10.688', '2', '0.2', '3.7408'),
 	('8802', 'CA-2020-140935', '11/10/20', '11/12/20', 'First Class', 'AB-10015', 'Aaron Bergman', 'Consumer', 'United States', 'Oklahoma City', 'Oklahoma', '73120', 'Central', 'TEC-PH-10000562', 'Technology', 'Phones', 'Samsung Convoy 3', '221.98', '2', '0', '62.1544'),
@@ -9171,9 +9175,9 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('9144', 'US-2021-166688', '5/20/21', '5/26/21', 'Standard Class', 'RD-19480', 'Rick Duston', 'Consumer', 'United States', 'Las Vegas', 'Nevada', '89115', 'West', 'TEC-PH-10004094', 'Technology', 'Phones', 'Motorola L703CM', '1123.128', '9', '0.2', '70.1955'),
 	('9145', 'US-2021-166688', '5/20/21', '5/26/21', 'Standard Class', 'RD-19480', 'Rick Duston', 'Consumer', 'United States', 'Las Vegas', 'Nevada', '89115', 'West', 'OFF-AP-10000358', 'Office Supplies', 'Appliances', 'Fellowes Basic Home/Office Series Surge Protectors', '64.9', '5', '0', '18.821'),
 	('9146', 'CA-2019-126970', '9/20/19', '9/24/19', 'Standard Class', 'TP-21130', 'Theone Pippenger', 'Consumer', 'United States', 'Naperville', 'Illinois', '60540', 'Central', 'OFF-BI-10000138', 'Office Supplies', 'Binders', 'Acco Translucent Poly Ring Binders', '2.808', '3', '0.8', '-4.4928'),
-	('9147', 'US-2020-165505', '1/23/20', '1/27/20', 'Standard Class', 'CB-12535', 'Claudia Bergmann', 'Corporate', 'United States', 'Burlington', 'Vermont', '', 'East', 'TEC-AC-10002926', 'Technology', 'Accessories', 'Logitech Wireless Marathon Mouse M705', '99.98', '2', '0', '42.9914'),
-	('9148', 'US-2020-165505', '1/23/20', '1/27/20', 'Standard Class', 'CB-12535', 'Claudia Bergmann', 'Corporate', 'United States', 'Burlington', 'Vermont', '', 'East', 'OFF-AR-10003477', 'Office Supplies', 'Art', '4009 Highlighters', '8.04', '6', '0', '2.7336'),
-	('9149', 'US-2020-165505', '1/23/20', '1/27/20', 'Standard Class', 'CB-12535', 'Claudia Bergmann', 'Corporate', 'United States', 'Burlington', 'Vermont', '', 'East', 'OFF-ST-10001526', 'Office Supplies', 'Storage', 'Iceberg Mobile Mega Data/Printer Cart', '1564.29', '13', '0', '406.7154'),
+	('9147', 'US-2020-165505', '1/23/20', '1/27/20', 'Standard Class', 'CB-12535', 'Claudia Bergmann', 'Corporate', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'TEC-AC-10002926', 'Technology', 'Accessories', 'Logitech Wireless Marathon Mouse M705', '99.98', '2', '0', '42.9914'),
+	('9148', 'US-2020-165505', '1/23/20', '1/27/20', 'Standard Class', 'CB-12535', 'Claudia Bergmann', 'Corporate', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'OFF-AR-10003477', 'Office Supplies', 'Art', '4009 Highlighters', '8.04', '6', '0', '2.7336'),
+	('9149', 'US-2020-165505', '1/23/20', '1/27/20', 'Standard Class', 'CB-12535', 'Claudia Bergmann', 'Corporate', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'OFF-ST-10001526', 'Office Supplies', 'Storage', 'Iceberg Mobile Mega Data/Printer Cart', '1564.29', '13', '0', '406.7154'),
 	('9150', 'US-2018-157070', '6/1/18', '6/6/18', 'Standard Class', 'QJ-19255', 'Quincy Jones', 'Corporate', 'United States', 'Detroit', 'Michigan', '48234', 'Central', 'OFF-BI-10001765', 'Office Supplies', 'Binders', 'Wilson Jones Heavy-Duty Casebound Ring Binders with Metal Hinges', '138.56', '4', '0', '66.5088'),
 	('9151', 'US-2018-157070', '6/1/18', '6/6/18', 'Standard Class', 'QJ-19255', 'Quincy Jones', 'Corporate', 'United States', 'Detroit', 'Michigan', '48234', 'Central', 'OFF-AP-10004859', 'Office Supplies', 'Appliances', 'Acco 6 Outlet Guardian Premium Surge Suppressor', '65.52', '5', '0.1', '12.376'),
 	('9152', 'US-2019-106873', '9/24/19', '9/29/19', 'Second Class', 'KM-16720', 'Kunst Miller', 'Consumer', 'United States', 'Avondale', 'Arizona', '85323', 'West', 'OFF-AR-10003179', 'Office Supplies', 'Art', 'Dixon Ticonderoga Core-Lock Colored Pencils', '14.576', '2', '0.2', '2.3686'),
@@ -9411,10 +9415,10 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('9384', 'CA-2018-154158', '12/23/18', '12/27/18', 'Second Class', 'CC-12670', 'Craig Carreira', 'Consumer', 'United States', 'Tampa', 'Florida', '33614', 'South', 'OFF-ST-10004950', 'Office Supplies', 'Storage', 'Acco Perma 3000 Stacking Storage Drawers', '83.92', '5', '0.2', '-1.049'),
 	('9385', 'CA-2021-100433', '8/11/21', '8/16/21', 'Standard Class', 'SJ-20125', 'Sanjit Jacobs', 'Home Office', 'United States', 'New York City', 'New York', '10009', 'East', 'OFF-PA-10003441', 'Office Supplies', 'Paper', 'Xerox 226', '25.92', '4', '0', '12.4416'),
 	('9386', 'CA-2021-163097', '8/27/21', '8/31/21', 'Standard Class', 'SF-20200', 'Sarah Foster', 'Consumer', 'United States', 'Mesa', 'Arizona', '85204', 'West', 'FUR-FU-10004973', 'Furniture', 'Furnishings', 'Flat Face Poster Frame', '120.576', '8', '0.2', '33.1584'),
-	('9387', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', '', 'East', 'OFF-PA-10000157', 'Office Supplies', 'Paper', 'Xerox 191', '79.92', '4', '0', '37.5624'),
-	('9388', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', '', 'East', 'OFF-PA-10001970', 'Office Supplies', 'Paper', 'Xerox 1881', '12.28', '1', '0', '5.7716'),
-	('9389', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', '', 'East', 'OFF-AP-10000828', 'Office Supplies', 'Appliances', 'Avanti 4.4 Cu. Ft. Refrigerator', '542.94', '3', '0', '152.0232'),
-	('9390', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', '', 'East', 'OFF-EN-10001509', 'Office Supplies', 'Envelopes', 'Poly String Tie Envelopes', '2.04', '1', '0', '0.9588'),
+	('9387', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'OFF-PA-10000157', 'Office Supplies', 'Paper', 'Xerox 191', '79.92', '4', '0', '37.5624'),
+	('9388', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'OFF-PA-10001970', 'Office Supplies', 'Paper', 'Xerox 1881', '12.28', '1', '0', '5.7716'),
+	('9389', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'OFF-AP-10000828', 'Office Supplies', 'Appliances', 'Avanti 4.4 Cu. Ft. Refrigerator', '542.94', '3', '0', '152.0232'),
+	('9390', 'US-2021-127292', '1/19/21', '1/23/21', 'Standard Class', 'RM-19375', 'Raymond Messe', 'Consumer', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'OFF-EN-10001509', 'Office Supplies', 'Envelopes', 'Poly String Tie Envelopes', '2.04', '1', '0', '0.9588'),
 	('9391', 'CA-2019-163734', '6/19/19', '6/24/19', 'Standard Class', 'KM-16375', 'Katherine Murray', 'Home Office', 'United States', 'Houston', 'Texas', '77070', 'Central', 'OFF-ST-10003692', 'Office Supplies', 'Storage', 'Recycled Steel Personal File for Hanging File Folders', '228.92', '5', '0.2', '14.3075'),
 	('9392', 'CA-2021-162474', '3/13/21', '3/16/21', 'First Class', 'FH-14275', 'Frank Hawley', 'Corporate', 'United States', 'Aurora', 'Illinois', '60505', 'Central', 'TEC-PH-10004700', 'Technology', 'Phones', 'PowerGen Dual USB Car Charger', '7.992', '1', '0.2', '2.5974'),
 	('9393', 'CA-2019-130848', '10/25/19', '10/25/19', 'Same Day', 'DG-13300', 'Deirdre Greer', 'Corporate', 'United States', 'Denver', 'Colorado', '80219', 'West', 'FUR-CH-10000422', 'Furniture', 'Chairs', 'Global Highback Leather Tilter in Burgundy', '582.336', '8', '0.2', '-29.1168'),
@@ -9766,7 +9770,7 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('9739', 'CA-2021-129294', '3/16/21', '3/21/21', 'Standard Class', 'KD-16615', 'Ken Dana', 'Corporate', 'United States', 'Los Angeles', 'California', '90032', 'West', 'OFF-BI-10004236', 'Office Supplies', 'Binders', 'XtraLife ClearVue Slant-D Ring Binder, White, 3""', '70.464', '6', '0.2', '22.9008'),
 	('9740', 'CA-2021-129294', '3/16/21', '3/21/21', 'Standard Class', 'KD-16615', 'Ken Dana', 'Corporate', 'United States', 'Los Angeles', 'California', '90032', 'West', 'OFF-BI-10001757', 'Office Supplies', 'Binders', 'Pressboard Hanging Data Binders for Unburst Sheets', '19.68', '5', '0.2', '6.888'),
 	('9741', 'CA-2021-129294', '3/16/21', '3/21/21', 'Standard Class', 'KD-16615', 'Ken Dana', 'Corporate', 'United States', 'Los Angeles', 'California', '90032', 'West', 'OFF-AP-10001154', 'Office Supplies', 'Appliances', 'Bionaire Personal Warm Mist Humidifier/Vaporizer', '140.67', '3', '0', '54.8613'),
-	('9742', 'CA-2019-117086', '11/8/19', '11/12/19', 'Standard Class', 'QJ-19255', 'Quincy Jones', 'Corporate', 'United States', 'Burlington', 'Vermont', '', 'East', 'FUR-BO-10004834', 'Furniture', 'Bookcases', 'Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish', '4404.9', '5', '0', '1013.127'),
+	('9742', 'CA-2019-117086', '11/8/19', '11/12/19', 'Standard Class', 'QJ-19255', 'Quincy Jones', 'Corporate', 'United States', 'Burlington', 'Vermont', NULL, 'East', 'FUR-BO-10004834', 'Furniture', 'Bookcases', 'Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish', '4404.9', '5', '0', '1013.127'),
 	('9743', 'CA-2021-131303', '11/28/21', '12/2/21', 'Standard Class', 'EP-13915', 'Emily Phan', 'Consumer', 'United States', 'San Diego', 'California', '92037', 'West', 'OFF-LA-10001074', 'Office Supplies', 'Labels', 'Round Specialty Laser Printer Labels', '62.65', '5', '0', '29.4455'),
 	('9744', 'CA-2020-137127', '6/16/20', '6/22/20', 'Standard Class', 'JJ-15445', 'Jennifer Jackson', 'Consumer', 'United States', 'Newark', 'Delaware', '19711', 'East', 'OFF-LA-10001641', 'Office Supplies', 'Labels', 'Avery 518', '9.45', '3', '0', '4.536'),
 	('9745', 'CA-2021-141782', '1/21/21', '1/25/21', 'Standard Class', 'BE-11410', 'Bobby Elias', 'Consumer', 'United States', 'Aurora', 'Illinois', '60505', 'Central', 'OFF-EN-10002230', 'Office Supplies', 'Envelopes', 'Airmail Envelopes', '268.576', '4', '0.2', '90.6444'),
@@ -10019,3 +10023,19 @@ INSERT INTO superstore_orders (Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mod
 	('9992', 'CA-2021-121258', '2/26/21', '3/3/21', 'Standard Class', 'DB-13060', 'Dave Brooks', 'Consumer', 'United States', 'Costa Mesa', 'California', '92627', 'West', 'TEC-PH-10003645', 'Technology', 'Phones', 'Aastra 57i VoIP phone', '258.576', '2', '0.2', '19.3932'),
 	('9993', 'CA-2021-121258', '2/26/21', '3/3/21', 'Standard Class', 'DB-13060', 'Dave Brooks', 'Consumer', 'United States', 'Costa Mesa', 'California', '92627', 'West', 'OFF-PA-10004041', 'Office Supplies', 'Paper', 'It\'s Hot Message Books with Stickers, 2 3/4"" x 5""', '29.6', '4', '0', '13.32'),
 	('9994', 'CA-2021-119914', '5/4/21', '5/9/21', 'Second Class', 'CC-12220', 'Chris Cortes', 'Consumer', 'United States', 'Westminster', 'California', '92683', 'West', 'OFF-AP-10002684', 'Office Supplies', 'Appliances', 'Acco 7-Outlet Masterpiece Power Center, Wihtout Fax/Phone Line Protection', '243.16', '2', '0', '72.948');
+
+
+-- Here we will create a new column to store our transactions date but with data type "DATE"     
+ALTER TABLE superstore_orders
+    ADD COLUMN Orders_Date DATE,
+    ADD COLUMN Ships_Date DATE;
+
+-- Convert and update the new DATE columns using existing VARCHAR/STRING dates
+UPDATE superstore_orders
+SET 
+    Orders_Date = STR_TO_DATE(Order_Date, '%c/%e/%y'),
+    Ships_Date = STR_TO_DATE(Ship_Date, '%c/%e/%y');
+
+ALTER TABLE superstore_orders
+    DROP COLUMN Order_Date,
+    DROP COLUMN Ship_Date;
