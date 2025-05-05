@@ -12,7 +12,8 @@ WHERE `City` IS NULL ;
 
 -- 3- write a query to get total profit, first order date and latest order date for each category
 SELECT  
-`Category`, round(SUM(`Profit`), 2) `total profit`, MIN(`Orders_Date`) `first order date`, max(`Orders_Date`) `latest order date`
+`Category`, round(SUM(`Profit`), 2) `total profit`, 
+MIN(`Orders_Date`) `first order date`, max(`Orders_Date`) `latest order date`
 FROM superstore_orders
 GROUP BY `Category` ; 
 
