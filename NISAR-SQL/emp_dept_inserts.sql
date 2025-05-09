@@ -1,3 +1,6 @@
+-- Active: 1746370038192@@127.0.0.1@3306@local
+DROP TABLE IF EXISTS employee ;
+
 create table employee(
     emp_id int,
     emp_name varchar(20),
@@ -18,7 +21,6 @@ insert into employee values(7,'Sanjay',200,9000,2,13);
 insert into employee values(8,'Ashish',200,5000,2,12);
 insert into employee values(9,'Mukesh',300,6000,6,51);
 insert into employee values(10,'Rakesh',500,7000,6,50);
-select * from employee;
 
 create table dept(
     dep_id int,
@@ -28,5 +30,3 @@ insert into dept values(100,'Analytics');
 insert into dept values(200,'IT');
 insert into dept values(300,'HR');
 insert into dept values(400,'Text Analytics');
-select * from dept;
-

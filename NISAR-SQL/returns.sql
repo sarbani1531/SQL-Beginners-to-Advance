@@ -1,11 +1,11 @@
 DROP TABLE IF EXISTS returns;
 
 CREATE TABLE returns (
-    Order Id	VARCHAR(512),
-    Return Reason	VARCHAR(512)
+    `Order Id`	VARCHAR(512),
+    `Return Reason`	VARCHAR(512)
 );
 
-INSERT INTO returns (Order Id, Return Reason) VALUES
+INSERT INTO returns (`Order Id`, `Return Reason`) VALUES
 	('CA-2020-104689', 'Wrong Items'),
 	('CA-2020-105081', 'Wrong Items'),
 	('CA-2020-105291', 'Wrong Items'),

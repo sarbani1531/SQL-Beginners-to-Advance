@@ -1,4 +1,4 @@
-Note: please do not use any functions which are not taught in the class. you need to solve the questions only with the concepts that have been discussed so far.
+
 
 1- write a query to get region wise count of return orders
 2- write a query to get category wise sales of orders that were not returned
