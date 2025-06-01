@@ -1,0 +1,67 @@
+EASY
+
+1.What is the total number of transactions?
+
+2.Find the number of unique customers.
+
+3.What is the average loan amount?
+
+4.List all distinct loan types.
+
+5.Count how many male and female customers are there.
+
+6.What is the highest loan amount sanctioned?
+
+7.Show top 5 customers with highest account balances.
+
+8.How many payments have been marked 'Missed'?
+
+9.What is the average credit score?
+
+10.List all customers older than 60.
+
+MEDIUM
+11. Find the total loan amount per loan type.
+12. Which occupation has the highest average income?
+13. Rank customers based on EMI amount.
+14. Calculate missed payments per region.
+15. Find average income and loan amount grouped by gender.
+16. List customers who have missed more than 3 payments.
+17. Identify customers whose account balance is less than their EMI.
+18. Show the top 3 branches by total loan amount sanctioned.
+19. Find the month with the most payments.
+20. Determine the average interest rate per loan type.
+21. Which region has the lowest average credit score?
+22. Count how many loans were taken by each age group (<30, 30–50, >50).
+23. Find the number of fraud transactions per branch.
+24. List the top 5 occupations by average EMI.
+25. Show customers with loan tenure greater than 5 years.
+
+HARD
+26. Identify customers who made payments every month for the last 6 months.
+27. Detect regions with fraud rates greater than 5%.
+28. Find all customers who paid EMIs but still have negative account balance.
+29. List customers whose income is less than 3 times their EMI.
+30. Identify customers with zero missed payments and highest credit scores.
+31. Which branch has the most high-value loans (>10 lakhs)?
+32. Find the top 3 most common loan types per region.
+33. Show the change in missed payment count before and after a specific date.
+34. Identify outliers in loan amount using standard deviation.
+35. Calculate average EMI per region and compare with national average.
+36. Find customers who paid all EMIs on time but still marked as fraud.
+37. List customers with more than 2 different loan types.
+38. For each customer, find the month with their highest EMI.
+39. Identify occupations with higher than average fraud rates.
+40. Which region has the widest variation in interest rate?
+
+ADVANCED
+41. Detect customers with increasing trend in EMI over time.
+42. Identify underperforming branches with high missed payment rates.
+43. List top 5 customers based on loan-to-income ratio.
+44. Cluster regions based on average credit score, EMI, and missed payments.
+45. Which month typically sees highest missed payments?
+46. Calculate rolling average EMI per customer over last 3 months.
+47. Identify cases where tenure was reduced after loan disbursement.
+48. Flag customers who make partial payments (EMI < expected).
+49. For each gender, find the top occupation based on total loan amount.
+50. Create a customer risk score combining credit score, missed payments, and fraud flag.
